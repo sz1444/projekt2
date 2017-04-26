@@ -1,0 +1,300 @@
+body {
+    font: 14px Roboto, Arial, sans-serif; 
+    color: #242424;
+   width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #68a54b;
+    transition: all 0.1s ease-out;
+}
+
+a:hover {
+    color: #555;
+}
+
+/* Intro */
+
+#intro {
+    width: 100%;
+    height: 600px;
+    
+    background: url('img/intro.jpg') no-repeat;
+   background-size:cover;
+    text-align: center;
+}
+
+#intro h2 {
+    margin: 0;
+    padding-top: 200px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+    text-transform: uppercase;
+}
+
+/* Przycisk intro */
+
+.introButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #9acc85;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #9acc85;
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #74ad5a), color-stop(1, #68a54b));
+	background:-moz-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-webkit-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-o-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:-ms-linear-gradient(top, #74ad5a 5%, #68a54b 100%);
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#74ad5a', endColorstr='#68a54b',GradientType=0);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:12px 18px;
+   margin-bottom: 10%;
+	text-decoration:none;
+}
+.introButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #68a54b), color-stop(1, #74ad5a));
+	background:-moz-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-webkit-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-o-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:-ms-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#68a54b', endColorstr='#74ad5a',GradientType=0);
+	background-color:#68a54b;
+    color: #fff;
+}
+.introButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Content */
+
+#content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Menu */
+
+#menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#menu li {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 4px;
+    text-transform: uppercase;
+}
+
+#menu li a {
+    padding: 10px;
+    color: #555555;
+}
+
+#menu li a:hover {
+    background: #68a54b;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+}
+
+/* Firma */
+
+#firma {
+    margin-bottom: 60px;
+}
+
+#firmaTresc {
+    width: 630px;
+    float: left;
+}
+
+#firmaTresc h1, #firmaSidebar h3 {
+    margin-top: 0;
+}
+
+#firmaTresc h1 {
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-weight: 300;
+}
+
+#firmaTresc img {
+    float: left;
+    margin: 0 12px 4px 0;
+}
+
+#firmaSidebar {
+    width: 230px;
+    float: right;
+}
+
+#firmaTresc, #firmaSidebar {
+    padding: 10px;
+ 
+}
+
+/* Zalety */
+
+#zalety {
+    margin-bottom: 60px;
+}
+
+.zaletyIkonka {
+    width: 215px;
+    text-align: center;
+    float: left;
+    padding: 0 5px;
+}
+
+.zaletyIkonka:hover i {
+    color: #68a54b;
+}
+
+.zaletyIkonka i {
+    transition: all 0.1s ease-out;
+    font-size: 60px;
+}
+
+.zaletyIkonka h4 {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+.zaletyIkonka p {
+    margin-top: 7px;
+}
+
+/* Kontakt */
+
+*kontakt
+{
+   margin-bottom: 60px; 
+}
+#kontakt input, #kontakt textarea
+{
+    width:100%;
+    padding: 5px;
+}
+
+#kontakt textarea
+{
+    height: 145px;
+}
+#mapa
+{
+   float:left; 
+}
+#formularz
+{
+       float:left; 
+}
+
+#formularz, #mapa
+{
+    padding: 0 4%;
+     width: 42%;
+}
+#kontakt .introbutton
+{
+   width: 50%;
+    
+}
+
+iframe{
+   width: 100%;
+}
+
+
+/* Wersja responsywna */
+@media (max-width: 930px) {
+   #firmaTresc img{
+      width: 100%;
+     
+   }
+   
+   #zalety{
+      text-align: center;
+   }
+   
+   #menu li{
+      width: 100%;
+      padding: 10px;
+      border-bottom: 2px solid #ccc;
+   }
+   
+   #menu {
+      background-color: #71ab56;
+   }
+   
+      .zaletyIkonka{
+         
+      width: 40%;
+         display: inline-block;
+      float:none;
+      margin: 0 auto;
+   }
+   
+   #firmaTresc, #firmaSidebar{
+      width: 100%;
+      padding: 20px 0;
+      
+   }
+
+   #firmaSidebar img{
+      width: 60%;
+     
+   }
+   
+   
+   #content{
+      padding: 0 20px;
+   }
+
+   
+   @media (max-width: 500px) {
+   #formularz, #mapa{
+      width: 100%;
+      padding: 0;
+   }
+   
+     .zaletyIkonka{
+      width: 100%;
+      float:none;
+      margin: 0 auto;
+   }
+}
+
+   
+   
+}
+
+
+/* Dodatkowe klasy */
+
+.clear {
+    clear: both;
+}
+
+.mtop0 {
+    margin-top: 0;
+}
+
+footer{
+   padding: 10px 0;
+   text-align: center;
+   border-top:1px solid #ddd;
+}
